@@ -5,6 +5,6 @@
 //  NEVER paste the "service_role" key here.
 // ─────────────────────────────────────────────────────────────
 window.AURELLE_CONFIG = {
-  SUPABASE_URL: 'https://YOUR-PROJECT.supabase.co',
-  SUPABASE_ANON_KEY: 'YOUR-ANON-PUBLIC-KEY',
+  SUPABASE_URL: 'https://airlworwqoouzsrprqix.supabase.co',
+  SUPABASE_ANON_KEY: 'sb_publishable_OYHNQ2QymPBXK-rRK5pcZg_UBzWHCI4',
 };
