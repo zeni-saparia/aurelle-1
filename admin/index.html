@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Admin — AURELLE</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css"><link rel="stylesheet" href="/admin/admin.css"><script src="/js/config.js"></script></head>
+<body class="admin"><div id="gate" class="empty" style="padding:30vh 16px">Checking access…</div>
+<div class="shell" id="shell" hidden><aside class="side" id="side"><span class="logo">AURELLE</span>
+  <a href="#dashboard">Dashboard</a><a href="#products">Products</a><a href="#categories">Categories</a><a href="#orders">Orders</a><a href="#customers">Customers</a><a href="#reviews">Reviews</a><a href="#coupons">Coupons</a><a href="#settings">Website settings</a>
+  <div style="margin-top:auto"><a href="/">View storefront</a><a href="#" id="out">Sign out</a></div></aside>
+  <div><div class="top"><button class="icon-btn menu-toggle" id="mt" aria-label="Menu"><svg class="i" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><input id="gsearch" class="grow" placeholder="Search the current section…" aria-label="Search" style="height:40px;border:1px solid var(--line);padding:0 12px;background:#fff8;flex:1;max-width:420px"><span id="who" class="muted"></span></div>
+  <main class="content" id="view"></main></div></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div id="modal-body"></div></div>
+<script type="module" src="/admin/admin.js"></script></body></html>

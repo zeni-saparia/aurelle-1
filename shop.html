@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shop — AURELLE</title><meta name="description" content="AURELLE — luxury home décor. Living, Refined.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css"><script src="/js/config.js"></script></head>
+<body data-page="shop"><div id="site-top"></div><main id="main">
+<div id="banner"></div>
+<div class="wrap"><div class="page-head" id="head"><div class="crumbs"><a href="/">Home</a> / <span id="crumb">Shop</span></div><h1 id="title" style="font-size:clamp(2.4rem,5vw,4rem)">Shop</h1><p class="muted" id="subtitle" style="max-width:56ch;margin:12px 0 0">Everything in the collection, filtered your way.</p></div>
+<div class="shop"><aside class="filters" id="filters" aria-label="Filters"></aside><section>
+  <div class="toolbar"><button class="btn ghost sm filter-toggle" id="ftoggle">Filters</button><span class="muted" id="count" role="status"></span>
+   <div style="display:flex;gap:10px;flex-wrap:wrap"><select id="sort" aria-label="Sort products"><option value="newest">Newest</option><option value="price_asc">Price: low to high</option><option value="price_desc">Price: high to low</option><option value="popular">Popularity</option><option value="rating">Best rated</option></select></div></div>
+  <div class="grid" id="grid"></div><div class="pager"><button class="btn ghost" id="more" hidden>Load more</button></div></section></div></div>
+<div class="scrim" id="fscrim" style="z-index:84"></div></main><div id="site-bottom"></div>
+<script type="module" src="/js/pages/shop.js"></script></body></html>

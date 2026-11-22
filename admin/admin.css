@@ -1,0 +1,19 @@
+body.admin{background:#f3efe8}
+.shell{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+.side{background:var(--espresso);color:var(--cream);padding:24px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:2px}
+.side .logo{color:var(--ivory);padding:0 10px 22px;font-size:24px;display:block}
+.side a{display:block;padding:10px 14px;font-size:14.5px;opacity:.78;border-left:2px solid transparent}.side a:hover{opacity:1}.side a[aria-current]{opacity:1;background:rgba(247,244,238,.08);border-color:var(--gold)}
+.top{display:flex;justify-content:space-between;align-items:center;padding:14px clamp(16px,3vw,36px);background:var(--ivory);border-bottom:1px solid var(--line);gap:12px}
+.content{padding:clamp(16px,3vw,36px)}.content h1{font-size:2.2rem;margin-bottom:22px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-bottom:24px}
+.stat{background:var(--ivory);border:1px solid var(--line);padding:20px}.stat b{display:block;font:500 2rem var(--serif);margin-top:4px}.stat span{font-size:13px;color:var(--muted)}
+.box{background:var(--ivory);border:1px solid var(--line);padding:22px;margin-bottom:24px}.box h3{margin-bottom:14px}
+.two{display:grid;grid-template-columns:1.6fr 1fr;gap:24px}@media(max-width:1000px){.two{grid-template-columns:1fr}}
+.bar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;align-items:center}.bar input,.bar select{height:42px;border:1px solid var(--line);background:var(--ivory);padding:0 12px}.bar .grow{flex:1;min-width:180px}
+.modal{position:fixed;inset:0;background:rgba(23,23,23,.5);z-index:100;display:none;overflow-y:auto;padding:4vh 16px}.modal.open{display:block}
+.modal>div{background:var(--ivory);max-width:760px;margin:0 auto;padding:clamp(18px,3vw,32px)}
+.thumb{width:44px;height:56px;object-fit:cover;background:var(--cream)}
+.rowbtn{padding:4px 10px;font-size:13px;border-bottom:1px solid currentColor;margin-right:10px}.rowbtn.del{color:var(--danger)}
+.menu-toggle{display:none}
+@media(max-width:860px){.shell{grid-template-columns:1fr}.side{position:fixed;left:0;top:0;z-index:90;transform:translateX(-100%);transition:transform .35s;width:250px}.side.open{transform:none}.menu-toggle{display:grid}}
+svg.chart text{font:11px var(--sans);fill:var(--muted)}
